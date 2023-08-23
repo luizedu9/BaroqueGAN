@@ -56,6 +56,23 @@ plt.savefig('plots/notes_frequency.png')
 plt.cla()
 plt.close()
 
+proportion = pd.DataFrame()
+proportion['Real'] = proportion_real
+proportion['GAN'] = proportion_gan
+proportion['WGAN-GP'] = proportion_wgan
+colors = ['blue', 'orange', 'red']
+ax = proportion.plot(kind='line', color=colors, figsize=(20, 10))
+plt.xlabel('Notes')
+plt.ylabel('Frequency')
+plt.title('Notes Frequency')
+plt.savefig('plots/notes_frequency_line.png')
+plt.cla()
+plt.close()
+
+print((proportion_real - proportion_gan).abs().sum())
+print((proportion_real - proportion_wgan).abs().sum())
+print('-----------------------')
+
 # Duration Frequency
 frequency_real = real_data.dataframe['duration'].value_counts().sort_index()
 proportion_real = frequency_real / frequency_real.sum()
@@ -84,3 +101,21 @@ plt.title('Duration Frequency')
 plt.savefig('plots/duration_frequency.png')
 plt.cla()
 plt.close()
+
+proportion = pd.DataFrame()
+proportion['Real'] = proportion_real
+proportion['GAN'] = proportion_gan
+proportion['WGAN-GP'] = proportion_wgan
+colors = ['blue', 'orange', 'red']
+ax = proportion.plot(kind='line', color=colors, figsize=(20, 10))
+plt.xlabel('Duration')
+plt.ylabel('Frequency')
+plt.title('Duration Frequency')
+plt.savefig('plots/duration_frequency_line.png')
+plt.cla()
+plt.close()
+
+
+print((proportion_real - proportion_gan).abs().sum())
+print((proportion_real - proportion_wgan).abs().sum())
+print('-----------------------')
