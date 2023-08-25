@@ -34,3 +34,6 @@ https://github.com/luizedu9/BaroqueGAN/assets/39964043/88d94eb9-4f13-43fe-81e7-7
 
 https://github.com/luizedu9/BaroqueGAN/assets/39964043/ea5ebabc-98a9-47b6-ac9a-b8703c99774d
 
+## WGAN-GP + Artist
+
+https://github.com/luizedu9/BaroqueGAN/assets/39964043/a56b931d-74f6-4a30-b9bf-4b8c6b0b1c2f
