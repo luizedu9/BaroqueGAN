@@ -1,3 +1,9 @@
+# Thesis
+
+## Analysis of the application of Generative Adversarial Network for composing music by baroque period composers (In portuguese)
+
+This work addresses the composition of Baroque music through artificial intelligence, aiming to contribute with generation methods for music composition inspired by a chosen style. The overall objective is to create original music using a machine learning approach, employing a dataset containing compositions by baroque composer Antonio Vivaldi. The adopted methodology combines the Generative Adversarial Network [GAN] and Wasserstein GAN with Gradient Penalty [WGAN-GP] neural networks with the Long Short-Term Memory [LSTM] temporal sequence modeling technique to generate compositions that evoke the rich Baroque style. The results revealed music that captures the essence of the period, presenting some similarities with the original dataset. Furthermore, the generated music underwent a comparative analysis using the t-Distributed Stochastic Neighbor Embedding [t-SNE] method, revealing significant correspondences with Vivaldi's compositions. These findings demonstrate the potential of the proposed approach to create musical pieces that faithfully reflect the patterns and characteristics of the baroque style. Furthermore, the opportunity arises to use artificial intelligence alongside the artistic skills of a composer, to give rise to AI-generated musical compositions that are subsequently enhanced by the expertise of a professional in the field.
+
 # GAN Samples
 
 ## Good Samples
